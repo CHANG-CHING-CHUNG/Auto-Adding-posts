@@ -5,7 +5,7 @@ console.log("Do you often forget to add a post?")
 console.log("Don't worry");
 console.log("This script will help you to add a post at 20:30 every day.");
 console.log("Script is running, Don't close the terminal");
-cron.schedule("* * * * *", () => {
+cron.schedule("30 23 * * *", () => {
 	
 	(async () => {
 		console.log("Starting...")

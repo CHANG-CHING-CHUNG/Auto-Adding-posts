@@ -1,5 +1,8 @@
 # 自動登入發貼文卡位腳本-Lidemy learning system專用
 因為有幾次超過晚上12點才想起沒寫到進度報告才誕生的腳本XD
+
+**注意：*預設發貼文的時間是**每日23點30分**
+
 使用到的模組
 1. [Puppeteer](https://github.com/puppeteer/puppeteer) Google推出的API，用來自動化測試用的。
 2. [Node-cron](https://www.npmjs.com/package/node-cron) 用來設定定時器。

@@ -5,6 +5,19 @@ console.log("Do you often forget to add a post?")
 console.log("Don't worry");
 console.log("This script will help you to add a post at 20:30 every day.");
 console.log("Script is running, Don't close the terminal");
+
+(async () => {
+	const browser = await puppeteer.launch( {
+		headless: false,
+		defaultViewport: {width: 600, height: 800},
+		userDataDir: "./User Data"
+	});
+	const page = (await browser.pages())[0];
+	await page.goto('https://learning.lidemy.com/reports');
+	await page.waitForSelector('.ant-input');
+	await browser.close();
+})();
+
 cron.schedule("30 23 * * *", () => {
 	
 	(async () => {
